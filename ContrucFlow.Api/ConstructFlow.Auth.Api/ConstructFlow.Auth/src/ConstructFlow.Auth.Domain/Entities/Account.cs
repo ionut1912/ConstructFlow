@@ -5,13 +5,14 @@ using Shared.Domain.Common;
 
 namespace ConstructFlow.Auth.Domain.Entities;
 
-public class Account: Entity
+public class Account : Entity
 {
     private Account() //for EF core
     {
+        Role= Role.ClientReadonly;
     }
 
-    private Account(string email,string passwod,string username,string name,string role)
+    private Account(string email, string passwod, string username, string name, string role)
     {
         if (string.IsNullOrWhiteSpace(email))
         {
@@ -89,7 +90,7 @@ public class Account: Entity
 
     public void ChangeRole(string role)
     {
-        if(string.IsNullOrEmpty(role))
+        if (string.IsNullOrEmpty(role))
         {
 
             throw new InvalidFieldException($"{nameof(Role)} is invalid");
@@ -100,11 +101,11 @@ public class Account: Entity
     }
 
     public string Email { get; private set; } = string.Empty;
-    public string Password { get; private set;  }= string.Empty;
-    public string Username { get; private set;  } = string.Empty;
-    public string Name { get; private set;  } = string.Empty;
+    public string Password { get; private set; } = string.Empty;
+    public string Username { get; private set; } = string.Empty;
+    public string Name { get; private set; } = string.Empty;
     public string ResetPasswordToken { get; private set; } = string.Empty;
-    public DateTime ResetPasswordTokenExpiresAt { get; private set;  }
+    public DateTime ResetPasswordTokenExpiresAt { get; private set; }
     public Role Role { get; private set; }
 
 }

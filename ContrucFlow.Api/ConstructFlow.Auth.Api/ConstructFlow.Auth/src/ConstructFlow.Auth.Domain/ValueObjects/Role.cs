@@ -3,7 +3,7 @@ using Shared.Domain.Common;
 
 namespace ConstructFlow.Auth.Domain.ValueObjects;
 
-public class Role:ValueObject
+public class Role : ValueObject
 {
     public static readonly Role Admin = new("Admin");
     public static readonly Role ProjectManager = new("project_manager");
@@ -28,11 +28,11 @@ public class Role:ValueObject
         return role.Trim().ToLowerInvariant() switch
         {
             "admin" => Admin,
-            "projectmanager"=>ProjectManager,
-            "sitesupervisor"=>SiteSupervisor,
-            "worker"=>Worker,
-            "clientreadonly"=>ClientReadonly,
-            _=> throw new InvalidRoleException($"Role {role} is invalid")
+            "projectmanager" => ProjectManager,
+            "sitesupervisor" => SiteSupervisor,
+            "worker" => Worker,
+            "clientreadonly" => ClientReadonly,
+            _ => throw new InvalidRoleException($"Role {role} is invalid")
         };
     }
 }

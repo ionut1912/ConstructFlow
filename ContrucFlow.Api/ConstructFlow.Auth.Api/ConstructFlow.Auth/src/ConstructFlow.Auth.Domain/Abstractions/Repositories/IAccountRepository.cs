@@ -3,7 +3,7 @@ using Shared.Domain.Interfaces;
 
 namespace ConstructFlow.Auth.Domain.Abstractions.Repositories;
 
-public interface IAccountRepository:IGenericRepository<Account>
+public interface IAccountRepository : IGenericRepository<Account>
 {
-    Task<Account?> GetByEmailAsync(string email,CancellationToken cancellationToken);
+    Task<Account?> GetByEmailAsync(string email, CancellationToken cancellationToken);
 }

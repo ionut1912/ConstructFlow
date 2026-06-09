@@ -2,6 +2,6 @@
 
 namespace ConstructFlow.Auth.Domain.Exceptions;
 
-public class InvalidFieldException(string message):Exception(message)
+public class InvalidFieldException(string message) : Exception(message)
 {
 }

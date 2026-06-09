@@ -1,7 +1,4 @@
-﻿using ConstructFlow.Auth.Domain.Abstractions.Repositories;
-using ConstructFlow.Auth.Domain.Abstractions.Services;
-using ConstructFlow.Auth.Domain.Entities;
-using ConstructFlow.Auth.Infrastructure.Persistance;
+﻿using ConstructFlow.Auth.Infrastructure.Persistance;
 using ConstructFlow.Auth.Infrastructure.Persistance.Repositories;
 using ConstructFlow.Auth.Infrastructure.Services;
 using Microsoft.Extensions.Configuration;
@@ -26,7 +23,7 @@ public static class DependencyInjection
         {
             services
                 .AddRepository<Account, AccountRepository, IAccountRepository, ApplicationDbContext>()
-                .AddRepository<RefreshToken,RefreshTokenRepository, IRefreshTokenRepository, ApplicationDbContext>()
+                .AddRepository<RefreshToken, RefreshTokenRepository, IRefreshTokenRepository, ApplicationDbContext>()
                 .AddRepos<ITokenService, TokenService>()
                 .AddRepos<IPasswordService, PasswordService>()
                 .AddRepos<IUnitOfWork, UnitOfWork>();
