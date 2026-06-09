@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="src/ConstructFlow.Auth.Api/ConstructFlow.Auth.Api.csproj" Id="eb19b1b3-c306-4b4d-bfde-0ddcab2ec499" />
+  <Project Path="src/ConstructFlow.Auth.Domain/ConstructFlow.Auth.Domain.csproj" />
+  <Project Path="src/ConstructFlow.Auth.Infrastructure/ConstructFlow.Auth.Infrastructure.csproj" Id="d2a120e0-2e9c-49e1-bc4d-f5eec0955a26" />
+</Solution>

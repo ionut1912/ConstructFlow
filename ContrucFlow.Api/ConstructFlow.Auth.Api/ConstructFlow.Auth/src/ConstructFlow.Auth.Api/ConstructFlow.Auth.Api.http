@@ -1,0 +1,6 @@
+@ConstructFlow.Auth.Api_HostAddress = http://localhost:5166
+
+GET {{ConstructFlow.Auth.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/.vs
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/src/ConstructFlow.Auth.Api/obj
+
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/nuget.config
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/src/ConstructFlow.Auth.Api/bin/*
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/src/ConstructFlow.Auth.Infrastructure/bin/*
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/src/ConstructFlow.Auth.Infrastructure/obj
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/src/ConstructFlow.Auth.Domain/bin/*
+/ContrucFlow.Api/ConstructFlow.Auth.Api/ConstructFlow.Auth/src/ConstructFlow.Auth.Domain/obj
